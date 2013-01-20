@@ -47,9 +47,12 @@ $(call inherit-product, device/samsung/fascinatemtd/device.mk)
 
 # US Cellular cdma stuff
 PRODUCT_PROPERTY_OVERRIDES += \
-       ro.cdma.home.operator.numeric=311220 \
+       ro.cdma.home.operator.numeric=310120 \
        ro.cdma.home.operator.alpha=uscc \
        net.cdma.pppd.user=user[SPACE]USCC
+
+PRODUCT_COPY_FILES += \
+       device/samsung/mesmerizemtd/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 TARGET_OTA_ASSERT_DEVICE := aries,mesmerize,mesmerizemtd,SCH-I500
 
