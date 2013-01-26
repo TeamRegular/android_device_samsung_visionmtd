@@ -55,9 +55,3 @@ PRODUCT_COPY_FILES += \
        device/samsung/mesmerizemtd/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 TARGET_OTA_ASSERT_DEVICE := aries,mesmerize,mesmerizemtd,SCH-I500
-
-# See comment at the top of this file. This is where the other
-# half of the device-specific product definition file takes care
-# of the aspects that require proprietary drivers that aren't
-# commonly available
-$(call inherit-product-if-exists, vendor/samsung/mesmerizemtd/mesmerizemtd-vendor.mk)
