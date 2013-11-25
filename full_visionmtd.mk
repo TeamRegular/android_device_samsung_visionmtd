@@ -23,15 +23,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/samsung/mesmerizemtd/mesmerizemtd.mk)
+$(call inherit-product, device/samsung/visionmtd/visionmtd.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Galaxy S uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_mesmerizemtd
-PRODUCT_DEVICE := mesmerizemtd
+PRODUCT_NAME := full_visionmtd
+PRODUCT_DEVICE := visionmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SCH-I500

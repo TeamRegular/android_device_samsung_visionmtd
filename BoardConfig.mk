@@ -19,5 +19,3 @@
 
 include device/samsung/fascinatemtd/BoardConfig.mk
 
-TARGET_RECOVERY_FSTAB := device/samsung/fascinatemtd/recovery.fstab
-

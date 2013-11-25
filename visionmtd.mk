@@ -44,5 +44,3 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/mesmerizemtd/overlay \
 	device/samsung/aries-common/overlay
 
 $(call inherit-product, device/samsung/fascinatemtd/device.mk)
-
-TARGET_OTA_ASSERT_DEVICE := aries,mesmerize,mesmerizemtd,SCH-I500

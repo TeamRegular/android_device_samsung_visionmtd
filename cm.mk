@@ -1,18 +1,15 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
-
 # Release name
-PRODUCT_RELEASE_NAME := Mesmerize
+PRODUCT_RELEASE_NAME := vision
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/mesmerizemtd/full_mesmerizemtd.mk)
+$(call inherit-product, device/samsung/visionmtd/full_visionmtd.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := mesmerizemtd
-PRODUCT_NAME := cm_mesmerizemtd
+PRODUCT_DEVICE := visionmtd
+PRODUCT_NAME := cm_visionmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SCH-I500
 
