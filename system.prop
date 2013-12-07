@@ -1,10 +1,9 @@
 #
-# system.prop for mesmerizemtd
+# system.prop for visonmtd
 #
 
 rild.libpath=/system/lib/libsec-ril40.so
 rild.libargs=-d /dev/ttyS0
 ro.cdma.home.operator.numeric=310016
 ro.cdma.home.operator.alpha=Cricket
-net.cdma.pppd.user=user[SPACE]CricketWireless
 ro.sf.lcd_density=240
